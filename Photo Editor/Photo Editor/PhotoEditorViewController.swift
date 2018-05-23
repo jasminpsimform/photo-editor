@@ -127,7 +127,7 @@ public final class PhotoEditorViewController: UIViewController {
     
     func setImageView(image: UIImage) {
         imageView.image = image
-        let size = image.suitableSize(widthLimit: UIScreen.main.bounds.width)
+        let size = image.suitableSize(widthLimit: UIScreen.main.bounds.height)
         imageViewHeightConstraint.constant = (size?.height)!
     }
     
@@ -149,8 +149,3 @@ extension PhotoEditorViewController: ColorDelegate {
         }
     }
 }
-
-
-
-
-
